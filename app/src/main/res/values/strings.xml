@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Encryptsy</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_encrypt_decrypt">Encrypt/Decrypt</string>
+
+    <string name="encryptsy_server_address">http://52.41.193.221</string>
+
+    <string name="about_encryptsy_dialog_title">About Encryptsy</string>
+    <string name="how_am_i_protected_dialog_title">How Am I Protected?</string>
+
+    <string name="encryptsy_protection">"Encryptsy is a server-side encryption management service. "
+                "Upon creating your account, an AES 256-bit GCM encrypted 'vault' was generated for you on your device "
+                "along with a vault decryption key which decrypts your vault. Your vault keeps track of files that you've "
+                "encrypted by storing the encryption keys for each file that you're encrypted; each file is encrypted "
+                "with its own unique randomly generated key, and each account that you create has its own vault. Your vault "
+                "decryption key is encrypted with a vault companion key that resides with your vault on your device, "
+                "and your (encrypted) vault decryption key is sent to Encryptsy for storage during account creation. "
+                "Upon signing into your account, your (encrypted) vault decryption key is retrieved from the server, "
+                "decrypted on your device upon arrival with the vault's companion key that resides with your vault, "
+                "then your decrypted vault key is used to decrypt and open your vault. You may now encrypt and decrypt files, "
+                "and your vault is actively updated as you do so.\n\n"
+                "Your 'decoy password' is a fail-safe in the event that you are under duress or otherwise forced to "
+                "relinquish your login credentials. Signing in with your decoy password will delete your account from "
+                "the Encryptsy database, along with the vault's (encrypted) decryption key. Your device is unaffected by "
+                "this operation. At this point, the only means of breaking into a vault is through brute force, which would "
+                "take billions of years with the world's collective computing power, from smart watches to super computers.\n\n"
+                "Encryptsy maintains a secure database; usernames and passwords are one-way hashed with BCrypt, vault keys "
+                "are encrypted with AES 256-bit GCM on your device with the vault's companion key before being sent to Encryptsy "
+                "when you create your account.\n\n"
+                "Only your device holds the vault's companion key to decrypt your vault's decryption key; your vault's "
+                "companion key, your vault and your encrypted files never leave your device unless you decide to. This is so that "
+                "nothing is at risk in the event that your account is compromised from another device. To prevent an account lockout "
+                "attack, password changes are not possible; you must decrypt your files, create another account, then re-encrypt them "
+                "under that account (which will give you a brand new vault) in an efforts to reestablish security if you feel that your "
+                "credentials have been compromised."</string>
+
+    <string name="encryptsy_about"><![CDATA[
+        Encryptsy, a file security app created by <b>Chris Conley</b>.<br/>
+    ]]></string>
+
+        <string name="encryptsy_about_links"><![CDATA[
+        Encryptsy, a file security app created by <b>Chris Conley</b>.<br/>
+        <a href=\'https://starrla.co\'>Website</a>&nbsp;&nbsp;
+        <a href=\'https://starrla.co\'>Website</a>&nbsp;&nbsp;
+    ]]></string>
+
+
+
+
+</resources>

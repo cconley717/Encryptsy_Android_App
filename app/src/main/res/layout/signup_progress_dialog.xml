@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/signUpProgressIndicator"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="#1E88E5"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/signUpPrompt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Code Here"
+        app:met_floatingLabel="normal"
+        app:met_baseColor="#1E88E5"
+        app:met_maxCharacters="5"
+        app:met_primaryColor="?colorAccent"
+        app:met_hideUnderline="false"
+        android:textSize="20sp"
+        android:id="@+id/verificationInput"
+        android:layout_alignParentBottom="false"
+        android:gravity="center"
+        android:inputType="number" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/signUpTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_above="@+id/signUpClearContainer">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="username"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="#1E88E5"
+                        app:met_maxCharacters="50"
+                        app:met_primaryColor="?colorAccent"
+                        app:met_hideUnderline="false"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:id="@+id/usernameSignUpInput"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="password"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="#1E88E5"
+                        app:met_maxCharacters="50"
+                        app:met_primaryColor="?colorAccent"
+                        app:met_hideUnderline="false"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:id="@+id/passwordSignUp1Input"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="confirm password"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="#1E88E5"
+                        app:met_maxCharacters="50"
+                        app:met_primaryColor="?colorAccent"
+                        app:met_hideUnderline="false"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:id="@+id/passwordSignUp2Input"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="decoy password"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="#1E88E5"
+                        app:met_maxCharacters="50"
+                        app:met_primaryColor="?colorAccent"
+                        app:met_hideUnderline="false"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:id="@+id/decoyPasswordSignUp1Input"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="confirm decoy password"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="#1E88E5"
+                        app:met_maxCharacters="50"
+                        app:met_primaryColor="?colorAccent"
+                        app:met_hideUnderline="false"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:id="@+id/decoyPasswordSignUp2Input"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/signUpClearContainer">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/clearSignUpButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="Clear"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/signUpButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="Sign Up"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

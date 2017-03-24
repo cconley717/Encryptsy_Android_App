@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SignInSignUp">
+
+
+    <item android:id="@+id/action_howProtected" android:title="How Am I Protected?"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_about" android:title="About Encryptsy"
+        android:orderInCategory="110" app:showAsAction="never" />
+</menu>
