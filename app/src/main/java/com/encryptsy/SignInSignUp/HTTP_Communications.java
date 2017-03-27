@@ -7,15 +7,10 @@ import android.util.Base64;
 import android.util.Log;
 
 import com.encryptsy.R;
-import com.encryptsy.Utilities.DialogDispatcher;
-
-import org.apache.http.entity.ContentType;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
